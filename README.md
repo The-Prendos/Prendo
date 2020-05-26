@@ -11,7 +11,7 @@
 [(Back to Top)](#Table-of-Contents)
 
 ### Description
-Prendo, short for the latin word for "check", *reprehendo*, is an iOS-based to-do list app built arround the idea that keeping track of your deadlines and activities should not be a chore. With a minimalistic approach to the user interface, Prendo aims to take the work out of keeping track of your everyday tasks.
+Prendo, short for the latin word for "check", *reprehendo*, is an iOS-based to-do list app built around the idea that keeping track of your deadlines and activities should not be a chore. With a minimalistic approach to the user interface, Prendo aims to take the work out of keeping track of your everyday tasks.
 
 ### App Evaluation
 
