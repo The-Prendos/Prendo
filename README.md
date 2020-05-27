@@ -64,13 +64,16 @@ Prendo, short for the latin word for "check", *reprehendo*, is an iOS-based to-d
 * Home / Tasks Feed
 * Profile
 
-**Flow Navigation** (Screen to Screen) *Screens that our archetypes can navigate to once action is completed*
-
-* Forced Login Screen -> Account Creation if no login is available
-* Home -> Task Creation/Edit 
-* Task Creation -> Home (after adding a new task)
-   * Will need multiple screens to represent what happens if user chooses options to add photos and location with tasks
-* Settings -> Toggle settings
+**Flow Navigation** (Screen to Screen) *Screens that our archetypes will navigate to once an action is completed*
+* Login Screen
+ -> Home
+* Registration Screen
+ -> Home
+* Task Creation Screen
+ -> Home (after adding a new task)
+    * Will need multiple screens to represent what happens if user chooses options to add photos and location with tasks
+* Task Edit Screen 
+ -> Home
    
 
 ## Wireframes
