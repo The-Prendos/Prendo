@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175EC707592F8E7F8409CF3A /* Pods_Prendo_PrendoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAF538D10C95AB7D349A5C9 /* Pods_Prendo_PrendoUITests.framework */; };
+		191180594B94B8C0B4538558 /* Pods_PrendoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBBDB6FADC2ADCCE3B9B9C6 /* Pods_PrendoTests.framework */; };
 		5E66DBEC24820F310095A27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEB24820F310095A27C /* AppDelegate.swift */; };
 		5E66DBEE24820F310095A27C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBED24820F310095A27C /* SceneDelegate.swift */; };
 		5E66DBF024820F310095A27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEF24820F310095A27C /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		5E66DBF824820F320095A27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E66DBF624820F320095A27C /* LaunchScreen.storyboard */; };
 		5E66DC0324820F320095A27C /* PrendoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DC0224820F320095A27C /* PrendoTests.swift */; };
 		5E66DC0E24820F320095A27C /* PrendoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DC0D24820F320095A27C /* PrendoUITests.swift */; };
+		FEBED77D0A7AEB0048231B7E /* Pods_Prendo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C327B8E1C79AAD4E1F78280 /* Pods_Prendo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01EF861FAFDD4F2214462D2E /* Pods-PrendoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrendoTests.debug.xcconfig"; path = "Target Support Files/Pods-PrendoTests/Pods-PrendoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		04150CFAAAC348B70C9E81B2 /* Pods-Prendo-PrendoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo-PrendoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FAF538D10C95AB7D349A5C9 /* Pods_Prendo_PrendoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prendo_PrendoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4278B970A801D1B7F7B7CB2E /* Pods-Prendo-PrendoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo-PrendoUITests.release.xcconfig"; path = "Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C327B8E1C79AAD4E1F78280 /* Pods_Prendo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prendo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AE33F7C206BE64C8C1AEFE /* Pods-Prendo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo.release.xcconfig"; path = "Target Support Files/Pods-Prendo/Pods-Prendo.release.xcconfig"; sourceTree = "<group>"; };
 		5E66DBE824820F310095A27C /* Prendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E66DBEB24820F310095A27C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E66DBED24820F310095A27C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		5E66DC0924820F320095A27C /* PrendoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrendoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E66DC0D24820F320095A27C /* PrendoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrendoUITests.swift; sourceTree = "<group>"; };
 		5E66DC0F24820F320095A27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBBDB6FADC2ADCCE3B9B9C6 /* Pods_PrendoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrendoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE39A9D1671E6E80A0197ED /* Pods-PrendoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrendoTests.release.xcconfig"; path = "Target Support Files/Pods-PrendoTests/Pods-PrendoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB9AEFE4F348A3D44DA59853 /* Pods-Prendo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo.debug.xcconfig"; path = "Target Support Files/Pods-Prendo/Pods-Prendo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBED77D0A7AEB0048231B7E /* Pods_Prendo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191180594B94B8C0B4538558 /* Pods_PrendoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175EC707592F8E7F8409CF3A /* Pods_Prendo_PrendoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C581BEF216A02933D5F27A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C327B8E1C79AAD4E1F78280 /* Pods_Prendo.framework */,
+				1FAF538D10C95AB7D349A5C9 /* Pods_Prendo_PrendoUITests.framework */,
+				AEBBDB6FADC2ADCCE3B9B9C6 /* Pods_PrendoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E66DBDF24820F310095A27C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				5E66DC0124820F320095A27C /* PrendoTests */,
 				5E66DC0C24820F320095A27C /* PrendoUITests */,
 				5E66DBE924820F310095A27C /* Products */,
+				7F28E93EFA882C5028C5AE5F /* Pods */,
+				4C581BEF216A02933D5F27A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,20 @@
 			path = PrendoUITests;
 			sourceTree = "<group>";
 		};
+		7F28E93EFA882C5028C5AE5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9AEFE4F348A3D44DA59853 /* Pods-Prendo.debug.xcconfig */,
+				51AE33F7C206BE64C8C1AEFE /* Pods-Prendo.release.xcconfig */,
+				04150CFAAAC348B70C9E81B2 /* Pods-Prendo-PrendoUITests.debug.xcconfig */,
+				4278B970A801D1B7F7B7CB2E /* Pods-Prendo-PrendoUITests.release.xcconfig */,
+				01EF861FAFDD4F2214462D2E /* Pods-PrendoTests.debug.xcconfig */,
+				AEE39A9D1671E6E80A0197ED /* Pods-PrendoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E66DC1224820F320095A27C /* Build configuration list for PBXNativeTarget "Prendo" */;
 			buildPhases = (
+				2A0B4345F33B4DCE44725182 /* [CP] Check Pods Manifest.lock */,
 				5E66DBE424820F310095A27C /* Sources */,
 				5E66DBE524820F310095A27C /* Frameworks */,
 				5E66DBE624820F310095A27C /* Resources */,
+				2664BE1323D0C3C775A69CBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E66DC1524820F320095A27C /* Build configuration list for PBXNativeTarget "PrendoTests" */;
 			buildPhases = (
+				3297C72AC4E974A868860AE3 /* [CP] Check Pods Manifest.lock */,
 				5E66DBFA24820F320095A27C /* Sources */,
 				5E66DBFB24820F320095A27C /* Frameworks */,
 				5E66DBFC24820F320095A27C /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E66DC1824820F320095A27C /* Build configuration list for PBXNativeTarget "PrendoUITests" */;
 			buildPhases = (
+				6D8F652E45D32E6D7215F0C1 /* [CP] Check Pods Manifest.lock */,
 				5E66DC0524820F320095A27C /* Sources */,
 				5E66DC0624820F320095A27C /* Frameworks */,
 				5E66DC0724820F320095A27C /* Resources */,
+				06B63D282BE5C64F481ED307 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B63D282BE5C64F481ED307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2664BE1323D0C3C775A69CBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prendo/Pods-Prendo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prendo/Pods-Prendo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prendo/Pods-Prendo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0B4345F33B4DCE44725182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prendo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3297C72AC4E974A868860AE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrendoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8F652E45D32E6D7215F0C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prendo-PrendoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E66DBE424820F310095A27C /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		5E66DC1324820F320095A27C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9AEFE4F348A3D44DA59853 /* Pods-Prendo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +600,7 @@
 		};
 		5E66DC1424820F320095A27C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AE33F7C206BE64C8C1AEFE /* Pods-Prendo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +619,7 @@
 		};
 		5E66DC1624820F320095A27C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EF861FAFDD4F2214462D2E /* Pods-PrendoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		5E66DC1724820F320095A27C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE39A9D1671E6E80A0197ED /* Pods-PrendoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		5E66DC1924820F320095A27C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04150CFAAAC348B70C9E81B2 /* Pods-Prendo-PrendoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +686,7 @@
 		};
 		5E66DC1A24820F320095A27C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4278B970A801D1B7F7B7CB2E /* Pods-Prendo-PrendoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

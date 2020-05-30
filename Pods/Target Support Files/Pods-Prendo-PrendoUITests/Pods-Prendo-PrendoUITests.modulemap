@@ -1,0 +1,6 @@
+framework module Pods_Prendo_PrendoUITests {
+  umbrella header "Pods-Prendo-PrendoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
