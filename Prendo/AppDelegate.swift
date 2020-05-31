@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
           Parse.initialize(
                   with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-                      configuration.applicationId = "myAppId"
-                      configuration.server = "https://myAppName.herokuapp.com/parse"
+                      configuration.applicationId = "prendo"
+                      configuration.server = "https://prendo.herokuapp.com/parse"
                   })
               )
         return true
