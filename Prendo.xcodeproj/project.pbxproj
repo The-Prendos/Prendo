@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		175EC707592F8E7F8409CF3A /* Pods_Prendo_PrendoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAF538D10C95AB7D349A5C9 /* Pods_Prendo_PrendoUITests.framework */; };
 		191180594B94B8C0B4538558 /* Pods_PrendoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBBDB6FADC2ADCCE3B9B9C6 /* Pods_PrendoTests.framework */; };
+		424597D124833FEE005FE1F4 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424597D024833FEE005FE1F4 /* TaskTableViewCell.swift */; };
+		42DB748A248308540003040A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB7489248308540003040A /* HomeViewController.swift */; };
 		5E66DBEC24820F310095A27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEB24820F310095A27C /* AppDelegate.swift */; };
 		5E66DBEE24820F310095A27C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBED24820F310095A27C /* SceneDelegate.swift */; };
 		5E66DBF024820F310095A27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEF24820F310095A27C /* ViewController.swift */; };
@@ -41,7 +43,9 @@
 		01EF861FAFDD4F2214462D2E /* Pods-PrendoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrendoTests.debug.xcconfig"; path = "Target Support Files/Pods-PrendoTests/Pods-PrendoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		04150CFAAAC348B70C9E81B2 /* Pods-Prendo-PrendoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo-PrendoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FAF538D10C95AB7D349A5C9 /* Pods_Prendo_PrendoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prendo_PrendoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		424597D024833FEE005FE1F4 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		4278B970A801D1B7F7B7CB2E /* Pods-Prendo-PrendoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo-PrendoUITests.release.xcconfig"; path = "Target Support Files/Pods-Prendo-PrendoUITests/Pods-Prendo-PrendoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42DB7489248308540003040A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4C327B8E1C79AAD4E1F78280 /* Pods_Prendo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prendo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AE33F7C206BE64C8C1AEFE /* Pods-Prendo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo.release.xcconfig"; path = "Target Support Files/Pods-Prendo/Pods-Prendo.release.xcconfig"; sourceTree = "<group>"; };
 		5E66DBE824820F310095A27C /* Prendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,8 @@
 				5E66DBF424820F320095A27C /* Assets.xcassets */,
 				5E66DBF624820F320095A27C /* LaunchScreen.storyboard */,
 				5E66DBF924820F320095A27C /* Info.plist */,
+				42DB7489248308540003040A /* HomeViewController.swift */,
+				424597D024833FEE005FE1F4 /* TaskTableViewCell.swift */,
 			);
 			path = Prendo;
 			sourceTree = "<group>";
@@ -165,7 +171,6 @@
 				01EF861FAFDD4F2214462D2E /* Pods-PrendoTests.debug.xcconfig */,
 				AEE39A9D1671E6E80A0197ED /* Pods-PrendoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -410,7 +415,9 @@
 			files = (
 				5E66DBF024820F310095A27C /* ViewController.swift in Sources */,
 				5E66DBEC24820F310095A27C /* AppDelegate.swift in Sources */,
+				424597D124833FEE005FE1F4 /* TaskTableViewCell.swift in Sources */,
 				5E66DBEE24820F310095A27C /* SceneDelegate.swift in Sources */,
+				42DB748A248308540003040A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
