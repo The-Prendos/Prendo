@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prendo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -31,11 +31,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nq6-1d-Swf">
-                                <rect key="frame" x="0.0" y="307" width="375" height="415"/>
+                                <rect key="frame" x="0.0" y="307" width="375" height="505"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="fvI-Gu-hiG"/>
-                                    <constraint firstAttribute="height" constant="415" id="j1q-h2-Q8n"/>
+                                    <constraint firstAttribute="height" constant="505" id="j1q-h2-Q8n"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableViewCell" rowHeight="61" id="cQ9-L2-hop" customClass="TaskTableViewCell" customModule="Prendo" customModuleProvider="target">
@@ -48,8 +48,12 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Az-NK-ABy">
                                                     <rect key="frame" x="23" y="15" width="30" height="31"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="0Ju-ro-5RV"/>
+                                                        <constraint firstAttribute="height" constant="31" id="aOn-CS-li6"/>
+                                                    </constraints>
                                                     <connections>
-                                                        <action selector="taskFinished:" destination="1P5-2R-FFZ" eventType="touchUpInside" id="kP5-lU-utP"/>
+                                                        <action selector="taskCompletionAction:" destination="cQ9-L2-hop" eventType="touchUpInside" id="DoJ-iW-mYW"/>
                                                     </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Task Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YY-5H-0KR">
@@ -59,45 +63,52 @@
                                                         <constraint firstAttribute="height" constant="34" id="cZv-KQ-YWw"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rII-JW-u0z">
-                                                    <rect key="frame" x="307" y="20" width="25" height="23"/>
-                                                    <color key="backgroundColor" red="0.83651253172588835" green="0.83651253172588835" blue="0.83651253172588835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="23" id="Od7-hx-fr5"/>
-                                                        <constraint firstAttribute="width" constant="25" id="fB4-wG-OKu"/>
-                                                    </constraints>
-                                                    <state key="normal" image="checkmark" catalog="system"/>
+                                                    <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                                                     <connections>
-                                                        <action selector="confirmTask:" destination="1P5-2R-FFZ" eventType="touchUpInside" id="iCG-ZO-zOn"/>
+                                                        <action selector="textEditAction:" destination="cQ9-L2-hop" eventType="touchUpInside" id="Zef-Z3-G4D"/>
                                                     </connections>
-                                                </button>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wz-Tb-sv1">
-                                                    <rect key="frame" x="97" y="22" width="35" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </textField>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f40-F2-jZL">
+                                                    <rect key="frame" x="72" y="22" width="41" height="21"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0my-rr-YaQ">
+                                                    <rect key="frame" x="334" y="23" width="22" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="Rvd-kg-DbT"/>
+                                                        <constraint firstAttribute="height" constant="22" id="UOK-oq-meg"/>
+                                                    </constraints>
+                                                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" image="star" catalog="system">
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="favoriteAction:" destination="cQ9-L2-hop" eventType="touchUpInside" id="X7V-BH-7H0"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rII-JW-u0z" firstAttribute="leading" secondItem="3YY-5H-0KR" secondAttribute="trailing" constant="15" id="0Vc-N0-erL"/>
-                                                <constraint firstItem="6Az-NK-ABy" firstAttribute="leading" secondItem="bVa-ne-5ZO" secondAttribute="leadingMargin" constant="8" id="2pU-W3-dM3"/>
-                                                <constraint firstItem="6Az-NK-ABy" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="4" id="6KF-S7-Heu"/>
-                                                <constraint firstItem="rII-JW-u0z" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="9" id="GIP-qX-rC4"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="rII-JW-u0z" secondAttribute="trailing" constant="28" id="JWm-k7-1At"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f40-F2-jZL" secondAttribute="bottom" constant="7" id="F9u-Mr-tFd"/>
+                                                <constraint firstItem="6Az-NK-ABy" firstAttribute="leading" secondItem="bVa-ne-5ZO" secondAttribute="leadingMargin" constant="8" id="Ixi-E4-0hl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6Az-NK-ABy" secondAttribute="bottom" constant="4" id="SMK-e3-uh6"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="3YY-5H-0KR" secondAttribute="bottom" constant="1" id="Y8Y-VI-QMi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="rII-JW-u0z" secondAttribute="bottom" constant="7" id="YaN-lR-KRT"/>
+                                                <constraint firstItem="0my-rr-YaQ" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="12" id="fJk-3c-5un"/>
+                                                <constraint firstItem="0my-rr-YaQ" firstAttribute="leading" secondItem="3YY-5H-0KR" secondAttribute="trailing" constant="42" id="fhX-TL-X5I"/>
                                                 <constraint firstItem="3YY-5H-0KR" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="4" id="gPS-5S-Qft"/>
-                                                <constraint firstItem="3YY-5H-0KR" firstAttribute="leading" secondItem="6Az-NK-ABy" secondAttribute="trailing" constant="19" id="oiz-lu-iDD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="6Az-NK-ABy" secondAttribute="trailing" constant="307" id="ojQ-pz-HjY"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="6Az-NK-ABy" secondAttribute="bottom" constant="4" id="x8I-XT-uNm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0my-rr-YaQ" secondAttribute="bottom" constant="5" id="kv8-HV-XtH"/>
+                                                <constraint firstItem="f40-F2-jZL" firstAttribute="leading" secondItem="6Az-NK-ABy" secondAttribute="trailing" constant="19" id="p69-Mu-IkL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0my-rr-YaQ" secondAttribute="trailing" constant="4" id="qNq-2A-wSc"/>
+                                                <constraint firstItem="3YY-5H-0KR" firstAttribute="leading" secondItem="6Az-NK-ABy" secondAttribute="trailing" constant="19" id="s5z-r4-7EE"/>
+                                                <constraint firstItem="f40-F2-jZL" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="11" id="tNd-mu-LyY"/>
+                                                <constraint firstItem="6Az-NK-ABy" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="4" id="zEk-75-Yyz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="taskEditingFinished" destination="rII-JW-u0z" id="Ob1-kR-3H0"/>
-                                            <outlet property="taskLabel" destination="1wz-Tb-sv1" id="4nK-0y-Hyz"/>
+                                            <outlet property="completionButton" destination="6Az-NK-ABy" id="DcK-5F-GUc"/>
+                                            <outlet property="starbutton" destination="0my-rr-YaQ" id="hsx-NM-7Mb"/>
+                                            <outlet property="taskLabel" destination="f40-F2-jZL" id="e4D-y9-5eu"/>
                                             <outlet property="taskTextField" destination="3YY-5H-0KR" id="zuz-83-DXD"/>
                                         </connections>
                                     </tableViewCell>
@@ -105,13 +116,21 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month Day, Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTd-HH-3Rx">
                                 <rect key="frame" x="0.0" y="147" width="375" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="AW0-Ga-dit"/>
+                                    <constraint firstAttribute="height" constant="36" id="Q5v-ur-3zI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYS-zj-mLF">
                                 <rect key="frame" x="0.0" y="185" width="375" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="51v-0Z-OOS"/>
+                                    <constraint firstAttribute="width" constant="375" id="Rpg-E9-ljm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -119,18 +138,19 @@
                                 <rect key="frame" x="20" y="229" width="335" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="dOi-IP-KhJ"/>
-                                    <constraint firstAttribute="height" constant="7" id="kuS-82-dAQ"/>
+                                    <constraint firstAttribute="width" constant="335" id="KcT-wH-B8p"/>
+                                    <constraint firstAttribute="height" constant="7" id="rjP-fQ-kQJ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-lQ-V3G">
-                                <rect key="frame" x="16" y="249" width="44" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-lQ-V3G">
+                                <rect key="frame" x="16.000000000000004" y="249" width="41.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teG-hk-ihm">
-                                <rect key="frame" x="289" y="244" width="63" height="30"/>
+                                <rect key="frame" x="286.33333333333331" y="244" width="65.666666666666686" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="15"/>
                                 <state key="normal" title="Add Task"/>
                                 <connections>
                                     <action selector="newTaskAdded:" destination="1P5-2R-FFZ" eventType="touchUpInside" id="k5j-Kq-Md4"/>
@@ -140,26 +160,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="dK4-gb-jvG" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" constant="20" id="5eT-Pq-017"/>
-                            <constraint firstItem="dK4-gb-jvG" firstAttribute="top" secondItem="LYS-zj-mLF" secondAttribute="bottom" constant="8" id="5fh-Ij-2Fb"/>
-                            <constraint firstItem="jTd-HH-3Rx" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" id="6uZ-8a-Nxe"/>
-                            <constraint firstItem="LYS-zj-mLF" firstAttribute="top" secondItem="jTd-HH-3Rx" secondAttribute="bottom" constant="2" id="7Xx-h7-qL6"/>
-                            <constraint firstItem="gEw-lQ-V3G" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" constant="16" id="A6P-Al-YGO"/>
-                            <constraint firstItem="LYS-zj-mLF" firstAttribute="top" secondItem="jTd-HH-3Rx" secondAttribute="bottom" constant="2" id="AXD-Rs-wZd"/>
-                            <constraint firstItem="jTd-HH-3Rx" firstAttribute="trailing" secondItem="ogb-GK-f52" secondAttribute="trailing" id="Krb-3D-fhb"/>
+                            <constraint firstItem="jTd-HH-3Rx" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" id="710-32-Vs2"/>
+                            <constraint firstItem="dK4-gb-jvG" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" constant="20" id="9Dt-NS-M8B"/>
+                            <constraint firstItem="ogb-GK-f52" firstAttribute="trailing" secondItem="dK4-gb-jvG" secondAttribute="trailing" constant="20" id="BYL-92-y5Q"/>
+                            <constraint firstItem="dK4-gb-jvG" firstAttribute="top" secondItem="LYS-zj-mLF" secondAttribute="bottom" constant="8" id="FL2-Rk-Bmh"/>
+                            <constraint firstItem="teG-hk-ihm" firstAttribute="top" secondItem="dK4-gb-jvG" secondAttribute="bottom" constant="8" id="Ha2-4T-djN"/>
+                            <constraint firstItem="gEw-lQ-V3G" firstAttribute="top" secondItem="dK4-gb-jvG" secondAttribute="bottom" constant="13" id="Hbm-Ec-qMI"/>
+                            <constraint firstItem="LYS-zj-mLF" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" id="L9d-hl-0BO"/>
                             <constraint firstItem="nq6-1d-Swf" firstAttribute="trailing" secondItem="ogb-GK-f52" secondAttribute="trailing" id="LPo-EP-1bw"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="nq6-1d-Swf" secondAttribute="bottom" constant="7" id="RRp-2U-PPu"/>
-                            <constraint firstItem="LYS-zj-mLF" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" id="Slt-tJ-knb"/>
-                            <constraint firstItem="teG-hk-ihm" firstAttribute="top" secondItem="dK4-gb-jvG" secondAttribute="bottom" constant="8" id="Vjl-Jk-8Ad"/>
-                            <constraint firstItem="nq6-1d-Swf" firstAttribute="top" secondItem="gEw-lQ-V3G" secondAttribute="bottom" constant="37" id="Yg8-Um-KrO"/>
-                            <constraint firstItem="jTd-HH-3Rx" firstAttribute="top" secondItem="ogb-GK-f52" secondAttribute="top" constant="59" id="af3-jE-ENh"/>
-                            <constraint firstItem="LYS-zj-mLF" firstAttribute="trailing" secondItem="ogb-GK-f52" secondAttribute="trailing" id="bHB-C4-fjP"/>
-                            <constraint firstItem="gEw-lQ-V3G" firstAttribute="top" secondItem="dK4-gb-jvG" secondAttribute="bottom" constant="13" id="esR-wz-MjN"/>
-                            <constraint firstItem="nq6-1d-Swf" firstAttribute="top" secondItem="teG-hk-ihm" secondAttribute="bottom" constant="33" id="hCa-o3-of5"/>
-                            <constraint firstItem="ogb-GK-f52" firstAttribute="trailing" secondItem="dK4-gb-jvG" secondAttribute="trailing" constant="20" id="uYI-7d-KAO"/>
-                            <constraint firstItem="dK4-gb-jvG" firstAttribute="top" secondItem="LYS-zj-mLF" secondAttribute="bottom" constant="8" id="uqW-yO-wxi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nq6-1d-Swf" secondAttribute="bottom" constant="-83" id="RRp-2U-PPu"/>
+                            <constraint firstItem="LYS-zj-mLF" firstAttribute="top" secondItem="jTd-HH-3Rx" secondAttribute="bottom" constant="2" id="Ukm-hk-7J6"/>
+                            <constraint firstItem="nq6-1d-Swf" firstAttribute="top" secondItem="teG-hk-ihm" secondAttribute="bottom" constant="33" id="Y97-xl-UYb"/>
+                            <constraint firstItem="jTd-HH-3Rx" firstAttribute="trailing" secondItem="ogb-GK-f52" secondAttribute="trailing" id="h0Y-yG-8eS"/>
+                            <constraint firstItem="nq6-1d-Swf" firstAttribute="top" secondItem="gEw-lQ-V3G" secondAttribute="bottom" constant="37" id="jQz-Fd-JpL"/>
+                            <constraint firstItem="teG-hk-ihm" firstAttribute="leading" secondItem="gEw-lQ-V3G" secondAttribute="trailing" constant="229" id="oFS-hI-CnT"/>
+                            <constraint firstItem="ogb-GK-f52" firstAttribute="trailing" secondItem="teG-hk-ihm" secondAttribute="trailing" constant="23" id="rjY-jz-J7b"/>
+                            <constraint firstItem="gEw-lQ-V3G" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" constant="16" id="tHh-gb-FXu"/>
+                            <constraint firstItem="LYS-zj-mLF" firstAttribute="trailing" secondItem="ogb-GK-f52" secondAttribute="trailing" id="v0g-kp-AY9"/>
                             <constraint firstItem="nq6-1d-Swf" firstAttribute="leading" secondItem="ogb-GK-f52" secondAttribute="leading" id="xGr-gx-ZUa"/>
-                            <constraint firstItem="teG-hk-ihm" firstAttribute="leading" secondItem="gEw-lQ-V3G" secondAttribute="trailing" constant="229" id="ye4-P3-TMo"/>
+                            <constraint firstItem="jTd-HH-3Rx" firstAttribute="top" secondItem="ogb-GK-f52" secondAttribute="top" constant="59" id="xx3-Th-1VX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ogb-GK-f52"/>
                         <connections>
@@ -182,7 +201,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2028" y="146.30541871921181"/>
+            <point key="canvasLocation" x="2028" y="145.56650246305421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7iz-Uw-aTA">
@@ -206,6 +225,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>

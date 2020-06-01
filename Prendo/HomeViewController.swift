@@ -9,14 +9,25 @@
 import UIKit
 import AlamofireImage
 import Foundation
+import Parse
+
+
+
 
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+  
+  
     
-    
-    
+
     var rowCount = 0
-    var todoListArray = [String]()
+    var taskList = [String]()
+    var check = false
+    
+    
+    
+  
+    
     var currentTask = ""
     var currentRow = 0
     
@@ -25,7 +36,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var taskEditingFinished: UIButton!
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +46,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.reloadData()
+        
     
         
         grabCurrentDate()
+    
         // Do any additional setup after loading the view.
-        
+        tableView.reloadData()
         
        
     
@@ -76,20 +89,29 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath) as! TaskTableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
         
-        currentTask = cell.taskTextField.text as! String
+        let task = cell.taskTextField.text
+    
+
         
-        if(cell.taskEditingFinished == nil) {
-            todoListArray.append(currentTask)
-          
+        
+        if(task == "") {
+            cell.taskTextField.isHidden = false
+            cell.starbutton.isHidden = false
+            cell.taskLabel.text = ""
+        } else {
+            cell.taskTextField.isHidden = true
+            cell.taskLabel.isHidden = false
+            cell.taskLabel.text = task
+            
         }
         
-       
         
     
-        
+    
+    
         return cell
     }
     
@@ -105,16 +127,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    
-    @IBAction func confirmTask(_ sender: Any) {
-        
-
-      
-        view.endEditing(true)
-        
-    }
-  
-    
+ 
 
     /*
     // MARK: - Navigation
