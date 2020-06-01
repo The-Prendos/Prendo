@@ -79,7 +79,6 @@ Prendo, short for the latin word for "check", *reprehendo*, is an iOS-based to-d
 ## Wireframes
 [(Back to Top)](#Table-of-Contents)
 
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://i.imgur.com/2pgNIGA.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
