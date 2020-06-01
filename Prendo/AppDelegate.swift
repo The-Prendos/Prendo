@@ -27,9 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                       configuration.server = "https://prendo.herokuapp.com/parse"
                   })
               )
-        
-        
-        
+    
         return true
     }
 
