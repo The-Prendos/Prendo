@@ -61,12 +61,12 @@
 		42EDB7BA2484A1A300AF0455 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EDB78A2484A1A300AF0455 /* IQNSArray+Sort.swift */; };
 		5E66DBEC24820F310095A27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEB24820F310095A27C /* AppDelegate.swift */; };
 		5E66DBEE24820F310095A27C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBED24820F310095A27C /* SceneDelegate.swift */; };
-		5E66DBF024820F310095A27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEF24820F310095A27C /* ViewController.swift */; };
 		5E66DBF324820F310095A27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E66DBF124820F310095A27C /* Main.storyboard */; };
 		5E66DBF524820F320095A27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E66DBF424820F320095A27C /* Assets.xcassets */; };
 		5E66DBF824820F320095A27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E66DBF624820F320095A27C /* LaunchScreen.storyboard */; };
 		5E66DC0324820F320095A27C /* PrendoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DC0224820F320095A27C /* PrendoTests.swift */; };
 		5E66DC0E24820F320095A27C /* PrendoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DC0D24820F320095A27C /* PrendoUITests.swift */; };
+		5EFAB93624855F75005D17B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFAB93524855F75005D17B6 /* LoginViewController.swift */; };
 		FEBED77D0A7AEB0048231B7E /* Pods_Prendo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C327B8E1C79AAD4E1F78280 /* Pods_Prendo.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,7 +116,6 @@
 		5E66DBE824820F310095A27C /* Prendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E66DBEB24820F310095A27C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E66DBED24820F310095A27C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E66DBEF24820F310095A27C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E66DBF224820F310095A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E66DBF424820F320095A27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E66DBF724820F320095A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,6 +126,7 @@
 		5E66DC0924820F320095A27C /* PrendoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrendoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E66DC0D24820F320095A27C /* PrendoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrendoUITests.swift; sourceTree = "<group>"; };
 		5E66DC0F24820F320095A27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EFAB93524855F75005D17B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AEBBDB6FADC2ADCCE3B9B9C6 /* Pods_PrendoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrendoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE39A9D1671E6E80A0197ED /* Pods-PrendoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrendoTests.release.xcconfig"; path = "Target Support Files/Pods-PrendoTests/Pods-PrendoTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB9AEFE4F348A3D44DA59853 /* Pods-Prendo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo.debug.xcconfig"; path = "Target Support Files/Pods-Prendo/Pods-Prendo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,13 +254,13 @@
 				42EDB7752484A1A200AF0455 /* IQKeyboardManagerSwift */,
 				5E66DBEB24820F310095A27C /* AppDelegate.swift */,
 				5E66DBED24820F310095A27C /* SceneDelegate.swift */,
-				5E66DBEF24820F310095A27C /* ViewController.swift */,
 				5E66DBF124820F310095A27C /* Main.storyboard */,
 				5E66DBF424820F320095A27C /* Assets.xcassets */,
 				5E66DBF624820F320095A27C /* LaunchScreen.storyboard */,
 				5E66DBF924820F320095A27C /* Info.plist */,
 				42DB7489248308540003040A /* HomeViewController.swift */,
 				424597D024833FEE005FE1F4 /* TaskTableViewCell.swift */,
+				5EFAB93524855F75005D17B6 /* LoginViewController.swift */,
 			);
 			path = Prendo;
 			sourceTree = "<group>";
@@ -535,7 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E66DBF024820F310095A27C /* ViewController.swift in Sources */,
+				5EFAB93624855F75005D17B6 /* LoginViewController.swift in Sources */,
 				42EDB7912484A1A300AF0455 /* IQTitleBarButtonItem.swift in Sources */,
 				5E66DBEC24820F310095A27C /* AppDelegate.swift in Sources */,
 				42EDB7972484A1A300AF0455 /* IQToolbar.swift in Sources */,
