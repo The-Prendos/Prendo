@@ -59,6 +59,7 @@
 		42EDB7B82484A1A300AF0455 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EDB78A2484A1A300AF0455 /* IQNSArray+Sort.swift */; };
 		42EDB7B92484A1A300AF0455 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EDB78A2484A1A300AF0455 /* IQNSArray+Sort.swift */; };
 		42EDB7BA2484A1A300AF0455 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EDB78A2484A1A300AF0455 /* IQNSArray+Sort.swift */; };
+		42EDB7BE2486670E00AF0455 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EDB7BD2486670E00AF0455 /* ProfileViewController.swift */; };
 		5E66DBEC24820F310095A27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBEB24820F310095A27C /* AppDelegate.swift */; };
 		5E66DBEE24820F310095A27C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66DBED24820F310095A27C /* SceneDelegate.swift */; };
 		5E66DBF324820F310095A27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E66DBF124820F310095A27C /* Main.storyboard */; };
@@ -111,6 +112,7 @@
 		42EDB7882484A1A300AF0455 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		42EDB7892484A1A300AF0455 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		42EDB78A2484A1A300AF0455 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		42EDB7BD2486670E00AF0455 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4C327B8E1C79AAD4E1F78280 /* Pods_Prendo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prendo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AE33F7C206BE64C8C1AEFE /* Pods-Prendo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prendo.release.xcconfig"; path = "Target Support Files/Pods-Prendo/Pods-Prendo.release.xcconfig"; sourceTree = "<group>"; };
 		5E66DBE824820F310095A27C /* Prendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +263,7 @@
 				42DB7489248308540003040A /* HomeViewController.swift */,
 				424597D024833FEE005FE1F4 /* TaskTableViewCell.swift */,
 				5EFAB93524855F75005D17B6 /* LoginViewController.swift */,
+				42EDB7BD2486670E00AF0455 /* ProfileViewController.swift */,
 			);
 			path = Prendo;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				42EDB7972484A1A300AF0455 /* IQToolbar.swift in Sources */,
 				42EDB7942484A1A300AF0455 /* IQBarButtonItem.swift in Sources */,
 				42EDB78E2484A1A300AF0455 /* IQPreviousNextView.swift in Sources */,
+				42EDB7BE2486670E00AF0455 /* ProfileViewController.swift in Sources */,
 				424597D124833FEE005FE1F4 /* TaskTableViewCell.swift in Sources */,
 				5E66DBEE24820F310095A27C /* SceneDelegate.swift in Sources */,
 				42EDB7B52484A1A300AF0455 /* IQUIView+Hierarchy.swift in Sources */,

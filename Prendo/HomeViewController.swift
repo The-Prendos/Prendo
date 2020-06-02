@@ -92,21 +92,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath) as! TaskTableViewCell
         
         
-        let task = cell.taskTextField.text
-    
-
         
-        
-        if(task == "") {
-            cell.taskTextField.isHidden = false
-            cell.starbutton.isHidden = false
-            cell.taskLabel.text = ""
-        } else {
-            cell.taskTextField.isHidden = true
-            cell.taskLabel.isHidden = false
-            cell.taskLabel.text = task
-            
-        }
         
         
     
