@@ -21,8 +21,10 @@ class TaskEditingViewController: UIViewController {
     override func viewDidLoad(  ) {
         super.viewDidLoad()
         
-        descriptionTextView.text = "Placeholder"
+        descriptionTextView.text = "Explain to yourself why you want to complete this task..."
         descriptionTextView.textColor = UIColor.lightGray
+        descriptionTextView!.layer.borderWidth = 1
+        descriptionTextView!.layer.borderColor = UIColor.lightGray.cgColor
 
         // Do any additional setup after loading the view.
     }
