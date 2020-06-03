@@ -18,13 +18,17 @@ import Parse
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
   
   
+  
+  
     
 
     var rowCount = 0
-    var taskList = [String]()
+    var tasks = [PFObject]()
     var check = false
     
     
+    let filled_Star = UIImage(systemName: "star.fill")
+     let unfilled_Star = UIImage(systemName: "star")
     
   
     
@@ -53,12 +57,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
         // Do any additional setup after loading the view.
         tableView.reloadData()
-        
-       
-    
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        let query = PFQuery(className: "TaskList")
+        query.includeKey("User")
+        
+        query.findObjectsInBackground() { (tasks, error) in
+            if tasks != nil {
+                self.tasks = tasks!
+                self.tableView.reloadData()
+            }
+        }
+    }
     func grabCurrentDate() {
                 
           
@@ -82,28 +96,33 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         }
     
+   
+ 
+ 
+    
   
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rowCount
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath) as! TaskTableViewCell
-        
-        
-        
-        
-        
-    
-    
-    
-        return cell
-    }
+      
     
     
     @IBAction func newTaskAdded(_ sender: Any) {
+        
+        
         rowCount += 1
+        let task = PFObject(className: "TaskList")
+        task["User"] = PFUser.current()
+        task["Task"] = ""
+        task["Favorited"] = false
+        task["Completed"] = false
+    
+                       
+                       
+        task.saveInBackground() { (success, error) in
+            if(success) { print("saved") }
+            else { print("error") }
+            }
+        
+        
+       
         tableView.reloadData()
     }
     
@@ -111,6 +130,19 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+          return rowCount
+      }
+      
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
+        
+        return cell
+      }
+      
     
     
  

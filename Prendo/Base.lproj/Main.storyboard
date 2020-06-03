@@ -100,83 +100,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cQ9-L2-hop" id="bVa-ne-5ZO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Az-NK-ABy">
-                                                    <rect key="frame" x="23" y="15" width="30" height="31"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="0Ju-ro-5RV"/>
-                                                        <constraint firstAttribute="height" constant="31" id="aOn-CS-li6"/>
-                                                    </constraints>
-                                                    <connections>
-                                                        <action selector="taskCompletionAction:" destination="cQ9-L2-hop" eventType="touchUpInside" id="DoJ-iW-mYW"/>
-                                                    </connections>
-                                                </button>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Task Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YY-5H-0KR">
-                                                    <rect key="frame" x="72" y="15" width="172" height="34"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="172" id="N2b-dW-4Gr"/>
-                                                        <constraint firstAttribute="height" constant="34" id="cZv-KQ-YWw"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no"/>
-                                                    <connections>
-                                                        <action selector="textEditAction:" destination="cQ9-L2-hop" eventType="touchUpInside" id="Zef-Z3-G4D"/>
-                                                    </connections>
-                                                </textField>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f40-F2-jZL">
-                                                    <rect key="frame" x="72" y="22" width="41" height="21"/>
-                                                    <gestureRecognizers/>
-                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0my-rr-YaQ">
-                                                    <rect key="frame" x="334" y="23" width="22" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="22" id="Rvd-kg-DbT"/>
-                                                        <constraint firstAttribute="height" constant="22" id="UOK-oq-meg"/>
-                                                    </constraints>
-                                                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" image="star" catalog="system">
-                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="favoriteAction:" destination="cQ9-L2-hop" eventType="touchUpInside" id="X7V-BH-7H0"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd2-1y-leq">
-                                                    <rect key="frame" x="301" y="21" width="25" height="25"/>
-                                                    <state key="normal" image="Image"/>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="0my-rr-YaQ" firstAttribute="leading" secondItem="Hd2-1y-leq" secondAttribute="trailing" constant="8" id="AgP-1x-TN1"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="f40-F2-jZL" secondAttribute="bottom" constant="7" id="F9u-Mr-tFd"/>
-                                                <constraint firstItem="6Az-NK-ABy" firstAttribute="leading" secondItem="bVa-ne-5ZO" secondAttribute="leadingMargin" constant="8" id="Ixi-E4-0hl"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Hd2-1y-leq" secondAttribute="bottom" constant="4" id="Mop-ct-jQb"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="6Az-NK-ABy" secondAttribute="bottom" constant="4" id="SMK-e3-uh6"/>
-                                                <constraint firstItem="Hd2-1y-leq" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="10" id="V8H-1C-NIY"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="3YY-5H-0KR" secondAttribute="bottom" constant="1" id="Y8Y-VI-QMi"/>
-                                                <constraint firstItem="0my-rr-YaQ" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="12" id="fJk-3c-5un"/>
-                                                <constraint firstItem="0my-rr-YaQ" firstAttribute="leading" secondItem="3YY-5H-0KR" secondAttribute="trailing" constant="90" id="fhX-TL-X5I"/>
-                                                <constraint firstItem="3YY-5H-0KR" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="4" id="gPS-5S-Qft"/>
-                                                <constraint firstItem="Hd2-1y-leq" firstAttribute="leading" secondItem="3YY-5H-0KR" secondAttribute="trailing" constant="57" id="iaX-aa-hQK"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="0my-rr-YaQ" secondAttribute="bottom" constant="5" id="kv8-HV-XtH"/>
-                                                <constraint firstItem="f40-F2-jZL" firstAttribute="leading" secondItem="6Az-NK-ABy" secondAttribute="trailing" constant="19" id="p69-Mu-IkL"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="0my-rr-YaQ" secondAttribute="trailing" constant="4" id="qNq-2A-wSc"/>
-                                                <constraint firstItem="3YY-5H-0KR" firstAttribute="leading" secondItem="6Az-NK-ABy" secondAttribute="trailing" constant="19" id="s5z-r4-7EE"/>
-                                                <constraint firstItem="f40-F2-jZL" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="11" id="tNd-mu-LyY"/>
-                                                <constraint firstItem="6Az-NK-ABy" firstAttribute="top" secondItem="bVa-ne-5ZO" secondAttribute="topMargin" constant="4" id="zEk-75-Yyz"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outlet property="completionButton" destination="6Az-NK-ABy" id="DcK-5F-GUc"/>
-                                            <outlet property="starbutton" destination="0my-rr-YaQ" id="hsx-NM-7Mb"/>
-                                            <outlet property="taskLabel" destination="f40-F2-jZL" id="e4D-y9-5eu"/>
-                                            <outlet property="taskTextField" destination="3YY-5H-0KR" id="zuz-83-DXD"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -220,6 +145,7 @@
                                 <state key="normal" title="Add Task"/>
                                 <connections>
                                     <action selector="newTaskAdded:" destination="1P5-2R-FFZ" eventType="touchUpInside" id="k5j-Kq-Md4"/>
+                                    <segue destination="Eaq-jt-z3a" kind="presentation" id="6cF-S0-AzU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -272,6 +198,57 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-391" y="797"/>
+        </scene>
+        <!--Task Editing View Controller-->
+        <scene sceneID="rqY-My-07e">
+            <objects>
+                <viewController id="Eaq-jt-z3a" customClass="TaskEditingViewController" customModule="Prendo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZ6-SM-z0H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poe-iQ-JuY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9JG-B4-hMQ">
+                                        <rect key="frame" x="24" y="91" width="326" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGL-Mo-ZpI">
+                                        <rect key="frame" x="24" y="22" width="326" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLE-mW-4l2">
+                                        <rect key="frame" x="31" y="321" width="79" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="Image"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdV-a1-1qv">
+                                        <rect key="frame" x="266" y="322" width="76" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="star" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="i47-d5-YBZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="9JG-B4-hMQ" id="h08-kF-Fvq"/>
+                        <outlet property="titleTextField" destination="KGL-Mo-ZpI" id="hOM-Xn-scc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUf-Zl-k29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391.19999999999999" y="1532.5123152709359"/>
         </scene>
         <!--HomeTabController-->
         <scene sceneID="V9h-Kl-9Ia">
