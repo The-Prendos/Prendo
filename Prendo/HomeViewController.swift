@@ -117,17 +117,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.taskTitleLabel.text = (task["Task"] as! String)
         
-        if(tasks[indexPath.row]["objectId"] != nil) {
-            print(cell.theOID)
-            cell.setCompleted(task["Completed"] as! Bool)
-            cell.theOID = tasks[indexPath.row]["objectId"] as! String
-          
-        }
-        else {
-            print("no tasks")
-        }
         
-        
+        var myNum = String(indexPath.row)
+        cell.numLabel.text = myNum
         
         
 
