@@ -29,19 +29,19 @@ Prendo, short for the latin word for "check", *reprehendo*, is an iOS-based to-d
 
 **Required Must-have Stories**
 
-- [ ] User creates a new account
-- [ ] User logs in to access saved tasks
-- [ ] User adds a new task and edit previously saved tasks
-- [ ] User receives notifications about upcoming tasks
-- [ ] User can add pictures with tasks and add locations of tasks 
-- [ ] Settings (Reminders, account, sharing)
+- [x] User creates a new account
+- [x] User logs in to access saved tasks
+- [x] User adds a new task and edit previously saved tasks
+- [x] User can add locations of tasks to tasks
+- [x] Starred/Favorited tasks 
 
 **Optional Nice-to-have Stories**
 
+- [ ] User receives notifications about upcoming tasks
 - [ ] Recently deleted tasks
-- [ ] Starred/Favorited tasks 
 - [ ] Optionally color task background color
 - [ ] Separate section for tasks planned for "Today"
+- [ ] Settings (Reminders, account, sharing)
 - [ ] Dark Mode
 
 ### 2. Screen Archetypes *screens our app will need to function*
