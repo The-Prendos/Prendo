@@ -15,14 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGb-va-IrF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGb-va-IrF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prendo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uM-rx-BLa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prendo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uM-rx-BLa">
                                         <rect key="frame" x="68" y="357" width="279" height="182"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="279" id="d5h-iX-XgO"/>
-                                            <constraint firstAttribute="height" constant="182" id="zBQ-Bl-eLc"/>
+                                            <constraint firstAttribute="height" constant="182" id="aJx-Lk-8yM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="70"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,14 +30,19 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.79729968309999999" green="0.91704028839999996" blue="0.94510442019999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="3uM-rx-BLa" secondAttribute="bottom" constant="357" id="Wxt-eN-5vb"/>
-                                    <constraint firstAttribute="trailing" secondItem="3uM-rx-BLa" secondAttribute="trailing" constant="67" id="bgZ-GM-ZkH"/>
-                                    <constraint firstItem="3uM-rx-BLa" firstAttribute="top" secondItem="UGb-va-IrF" secondAttribute="top" constant="357" id="lQA-Qa-UDX"/>
-                                    <constraint firstItem="3uM-rx-BLa" firstAttribute="leading" secondItem="UGb-va-IrF" secondAttribute="leading" constant="68" id="y0y-Dw-eU2"/>
+                                    <constraint firstItem="3uM-rx-BLa" firstAttribute="leading" secondItem="UGb-va-IrF" secondAttribute="leading" constant="68" id="8kD-2K-JTZ"/>
+                                    <constraint firstItem="3uM-rx-BLa" firstAttribute="centerX" secondItem="UGb-va-IrF" secondAttribute="centerX" id="9St-Bs-UYZ"/>
+                                    <constraint firstItem="3uM-rx-BLa" firstAttribute="centerY" secondItem="UGb-va-IrF" secondAttribute="centerY" id="A8q-BV-8fj"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UGb-va-IrF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9eU-d2-AxR"/>
+                            <constraint firstAttribute="bottom" secondItem="UGb-va-IrF" secondAttribute="bottom" id="b22-3B-c8h"/>
+                            <constraint firstItem="UGb-va-IrF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dhX-bf-F7w"/>
+                            <constraint firstItem="UGb-va-IrF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="qTa-cG-RS1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
