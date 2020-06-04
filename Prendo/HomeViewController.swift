@@ -18,26 +18,16 @@ import Parse
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
   
   
-  
-  
-    
-
     var rowCount = 0
     var tasks = [PFObject]()
     var check = false
     
-    
-    let filled_Star = UIImage(systemName: "star.fill")
-     let unfilled_Star = UIImage(systemName: "star")
-    
-  
     
     var currentTask = ""
     var currentRow = 0
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
     
 
@@ -106,24 +96,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBAction func newTaskAdded(_ sender: Any) {
         
-        
-        rowCount += 1
-        let task = PFObject(className: "TaskList")
-        task["User"] = PFUser.current()
-        task["Task"] = ""
-        task["Favorited"] = false
-        task["Completed"] = false
-    
-                       
-                       
-        task.saveInBackground() { (success, error) in
-            if(success) { print("saved") }
-            else { print("error") }
-            }
-        
-        
-       
-        tableView.reloadData()
     }
     
     
@@ -133,13 +105,32 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-          return rowCount
+        return tasks.count
       }
       
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
         
+        
+        let task = tasks[indexPath.row]
+        
+        cell.taskTitleLabel.text = (task["Task"] as! String)
+        
+        if(tasks[indexPath.row]["objectId"] != nil) {
+            print(cell.theOID)
+            cell.setCompleted(task["Completed"] as! Bool)
+            cell.theOID = tasks[indexPath.row]["objectId"] as! String
+          
+        }
+        else {
+            print("no tasks")
+        }
+        
+        
+        
+        
+
         return cell
       }
       
