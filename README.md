@@ -86,3 +86,10 @@ Prendo, short for the latin word for "check", *reprehendo*, is an iOS-based to-d
 
 ### [BONUS] Interactive Prototype
 <img src="http://g.recordit.co/1y349UDM55.gif" width=250><br>
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/bX13sPFfLr.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
